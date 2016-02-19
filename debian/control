@@ -1,0 +1,34 @@
+Source: pmacct
+Section: net
+Priority: optional
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Build-Depends: debhelper (>= 9),
+ zlib1g-dev,
+ libpcap-dev,
+ libpq-dev,
+ libmysqlclient-dev,
+ libsqlite3-dev,
+ kfreebsd-kernel-headers[kfreebsd-any],
+ libgeoip-dev,
+ librabbitmq-dev,
+ libjansson-dev,
+ autotools-dev,
+ dh-systemd
+Standards-Version: 3.9.6
+Homepage: http://www.pmacct.net/
+Vcs-Git: https://github.com/bzed/pkg-pmacct.git
+Vcs-Browser: https://github.com/bzed/pkg-pmacct
+
+Package: pmacct
+Architecture: any
+Depends: ${shlibs:Depends}, net-tools [linux-any] | freebsd-net-tools [kfreebsd-any], psmisc, lsb-base (>= 3.2-14), ${misc:Depends}
+Pre-Depends: dpkg (>= 1.15.8)
+Description: promiscuous mode traffic accountant
+ pmacct is a tool designed to gather traffic information (bytes and number
+ of packets) by listening on a promiscuous interface or for Netflow data,
+ which may facilitate billing, bandwidth management, traffic analysis, or
+ creating usage graphs.
+ .
+ Data can be stored in memory and queried, displayed directly, or written
+ to a database; storage methods are quite flexible and may aggregate totals
+ or keep them separate.
