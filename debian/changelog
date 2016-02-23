@@ -1,3 +1,11 @@
+pmacct (1.5.2-1~precise0+exo1) precise; urgency=medium
+
+  * Backport for Precise.
+     + Remove systemd support.
+     + Remove RabbitMQ support.
+
+ -- Vincent Bernat <bernat@debian.org>  Tue, 23 Feb 2016 16:21:49 +0100
+
 pmacct (1.5.2-1) unstable; urgency=medium
 
   * [290e9b2] Merge tag 'upstream/1.5.2'

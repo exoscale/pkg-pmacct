@@ -10,10 +10,8 @@ Build-Depends: debhelper (>= 9),
  libsqlite3-dev,
  kfreebsd-kernel-headers[kfreebsd-any],
  libgeoip-dev,
- librabbitmq-dev,
  libjansson-dev,
- autotools-dev,
- dh-systemd
+ autotools-dev
 Standards-Version: 3.9.6
 Homepage: http://www.pmacct.net/
 Vcs-Git: https://github.com/bzed/pkg-pmacct.git
