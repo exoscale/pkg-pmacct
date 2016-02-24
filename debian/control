@@ -11,7 +11,7 @@ Build-Depends: debhelper (>= 9),
  kfreebsd-kernel-headers[kfreebsd-any],
  libgeoip-dev,
  libjansson-dev,
- autotools-dev
+ dh-autoreconf
 Standards-Version: 3.9.6
 Homepage: http://www.pmacct.net/
 Vcs-Git: https://github.com/bzed/pkg-pmacct.git

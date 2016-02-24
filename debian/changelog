@@ -1,6 +1,7 @@
 pmacct (1.5.3-0~precise0+exo1) precise; urgency=medium
 
   * New upstream release (with Kafka support).
+     + Enable rebuild through autoreconf.
   * Backport for Precise.
 
  -- Vincent Bernat <bernat@debian.org>  Wed, 24 Feb 2016 11:57:38 +0100

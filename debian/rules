@@ -27,6 +27,6 @@ override_dh_installinit:
 	dh_installinit --name sfacctd --no-start
 
 %:
-	dh $@ --with autotools_dev
+	dh $@ --with autoreconf
 
 
