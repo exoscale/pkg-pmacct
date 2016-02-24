@@ -4,6 +4,7 @@ pmacct (1.5.2-1~precise0+exo1) precise; urgency=medium
      + Remove systemd support.
      + Remove RabbitMQ support.
      + Add patch to work with Jansson 2.2 (from Precise).
+     + Disable tests (debhelper doesn't detect they don't exist).
 
  -- Vincent Bernat <bernat@debian.org>  Tue, 23 Feb 2016 16:21:49 +0100
 
