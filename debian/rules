@@ -17,7 +17,8 @@ override_dh_auto_configure:
 		--enable-64bit \
 		--enable-threads \
 		--enable-jansson \
-		--enable-geoip
+		--enable-geoip \
+		--enable-kafka
 
 override_dh_auto_test:
 

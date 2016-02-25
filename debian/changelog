@@ -1,3 +1,9 @@
+pmacct (1.5.3-0~precise0+exo2) precise; urgency=medium
+
+  * Enable Kafka support.
+
+ -- Vincent Bernat <bernat@debian.org>  Thu, 25 Feb 2016 17:54:43 +0100
+
 pmacct (1.5.3-0~precise0+exo1) precise; urgency=medium
 
   * New upstream release (with Kafka support).

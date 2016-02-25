@@ -11,6 +11,7 @@ Build-Depends: debhelper (>= 9),
  kfreebsd-kernel-headers[kfreebsd-any],
  libgeoip-dev,
  libjansson-dev,
+ librdkafka-dev,
  dh-autoreconf
 Standards-Version: 3.9.6
 Homepage: http://www.pmacct.net/
