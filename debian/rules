@@ -23,7 +23,7 @@ override_dh_auto_configure:
 override_dh_auto_test:
 
 override_dh_installinit:
-	dh_installinit --name pmacctd --no-start
+	dh_installinit --name pmacctd
 	dh_installinit --name nfacctd --no-start
 	dh_installinit --name sfacctd --no-start
 

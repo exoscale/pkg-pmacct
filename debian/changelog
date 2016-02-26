@@ -1,3 +1,9 @@
+pmacct (1.5.3-0~precise0+exo3) precise; urgency=medium
+
+  * Start/restart pmacct on install/upgrade.
+
+ -- Vincent Bernat <bernat@debian.org>  Fri, 26 Feb 2016 11:02:09 +0100
+
 pmacct (1.5.3-0~precise0+exo2) precise; urgency=medium
 
   * Enable Kafka support.
