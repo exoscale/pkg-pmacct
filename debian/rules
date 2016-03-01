@@ -7,6 +7,7 @@ DEB_HOST_ARCH_OS = $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
+		--enable-ulog \
 		--enable-mmap \
 		--enable-pgsql \
 		--with-pgsql-includes=`pg_config --includedir` \
@@ -26,6 +27,7 @@ override_dh_installinit:
 	dh_installinit --name pmacctd
 	dh_installinit --name nfacctd --no-start
 	dh_installinit --name sfacctd --no-start
+	dh_installinit --name uacctd --no-start
 
 %:
 	dh $@ --with autoreconf
