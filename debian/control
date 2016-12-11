@@ -6,13 +6,16 @@ Build-Depends: debhelper (>= 9),
  zlib1g-dev,
  libpcap-dev,
  libpq-dev,
- libmysqlclient-dev,
+ default-libmysqlclient-dev,
  libsqlite3-dev,
  kfreebsd-kernel-headers[kfreebsd-any],
  libgeoip-dev,
  librabbitmq-dev,
  libjansson-dev,
+ librdkafka-dev,
+ libnetfilter-log-dev,
  autotools-dev,
+ pkg-config,
  dh-systemd
 Standards-Version: 3.9.6
 Homepage: http://www.pmacct.net/
