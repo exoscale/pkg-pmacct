@@ -8,7 +8,7 @@
 # Should-Stop:          postgresql mysql
 # Default-Start:        2 3 4 5
 # Default-Stop:         0 1 6
-# Short-Description:    sflow accounting daemon
+# Short-Description:    ulog accounting daemon
 ### END INIT INFO
 
 # Author: Bernd Zeimetz <bzed@debian.org>
@@ -16,13 +16,13 @@
 # Do NOT "set -e"
 
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
-DESC="sflow accounting daemon"
+DESC="promiscuous mode accounting daemon"
 NAME=uacctd
 DAEMON=/usr/sbin/uacctd
 DAEMON_OPTS=""
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
-SFACCTD_CONF=/etc/pmacct/uacctd.conf
+UACCTD_CONF=/etc/pmacct/uacctd.conf
 
 # Exit if the package is not installed
 [ -x "$DAEMON" ] || exit 0
@@ -50,7 +50,7 @@ do_start()
 	start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON --test > /dev/null \
 		|| return 1
 	start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- \
-                -F $PIDFILE -f "$SFACCTD_CONF" -D \
+                -F $PIDFILE -f "$UACCTD_CONF" -D \
 		$DAEMON_OPTS \
 		|| return 2
 }
