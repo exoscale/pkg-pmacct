@@ -3,6 +3,7 @@ pmacct (1.6.1-1~precise0+exo1) precise; urgency=medium
   * Backport for Precise.
      + Drop patch for compat with Jansson 2.2 (upstream).
      + Drop patch to modernize build system (upstream).
+     + Build-Depends on libmysqlclient-dev (revert below entry).
 
  -- Vincent Bernat <bernat@debian.org>  Sun, 11 Dec 2016 19:03:13 +0100
 
