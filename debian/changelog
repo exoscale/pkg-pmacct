@@ -1,3 +1,9 @@
+pmacct (1.6.1-1~precise0+exo2) precise; urgency=medium
+
+  * Do not start pmacct by default.
+
+ -- Vincent Bernat <bernat@debian.org>  Tue, 13 Dec 2016 12:25:00 +0100
+
 pmacct (1.6.1-1~precise0+exo1) precise; urgency=medium
 
   * Backport for Precise.
