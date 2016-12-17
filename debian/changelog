@@ -1,3 +1,9 @@
+pmacct (1.6.1-1~precise0+exo3) precise; urgency=medium
+
+  * Add a patch to fix missing timestamps.
+
+ -- Vincent Bernat <bernat@debian.org>  Sat, 17 Dec 2016 23:46:42 +0100
+
 pmacct (1.6.1-1~precise0+exo2) precise; urgency=medium
 
   * Do not start pmacct by default.
