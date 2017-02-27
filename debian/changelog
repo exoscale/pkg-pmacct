@@ -1,3 +1,9 @@
+pmacct (1.6.1-1~xenial0+exo1) xenial; urgency=medium
+
+  * Forward-port to Xenial.
+
+ -- Vincent Bernat <bernat@debian.org>  Mon, 27 Feb 2017 17:51:48 +0100
+
 pmacct (1.6.1-1~precise0+exo3) precise; urgency=medium
 
   * Add a patch to fix missing timestamps.
